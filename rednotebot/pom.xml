@@ -27,6 +27,31 @@
 			<artifactId>support-v4</artifactId>
 			<version>r7</version>
 		</dependency>
+
+		<!--  ============================================== -->
+		<!--  Dropbox releated dependencies -->
+		<!--  ============================================== -->
+		<dependency>
+			<groupId>com.dropbox</groupId>
+			<artifactId>dropbox-android</artifactId>
+			<version>1.2.3</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/dropbox-android-sdk-1.2.3.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpmime</artifactId>
+			<version>4.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>simple</artifactId>
+			<version>1.1</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/json_simple-1.1.jar</systemPath>
+		</dependency>
+
 	</dependencies>
 
 	<build>
