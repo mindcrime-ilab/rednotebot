@@ -14,4 +14,13 @@
 
         <!-- Preview: layout=@layout/daylist_fragment -->
     </fragment>
+    <fragment
+        android:id="@+id/dayEntryView"
+        android:name="de.mindcrimeilab.rednotebot.ui.DayEntryFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+        <!-- Preview: layout=@layout/dayentry_fragment -->
+    </fragment>
+
 </LinearLayout>

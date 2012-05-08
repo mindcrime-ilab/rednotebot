@@ -13,24 +13,29 @@
  */
 package de.mindcrimeilab.rednotebot.ui;
 
-import de.mindcrimeilab.rednotebot.R;
 import android.os.Bundle;
-import android.support.v4.app.ListFragment;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+import de.mindcrimeilab.rednotebot.R;
 
 /**
+ * This view fragment shows the content of a certain journal entry.
+ * 
  * @author Michael Engelhardt <me@mindcrime-ilab.de>
- *
+ * 
  */
-public class DayListFragement extends ListFragment {
-    /* (non-Javadoc)
-     * @see android.support.v4.app.ListFragment#onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)
-     */
+public class DayEntryFragment extends Fragment {
+
     @Override
+    /*
+     * (non-Javadoc)
+     * 
+     * @see android.support.v4.app.ListFragment#onCreateView(android.view.LayoutInflater, android.view.ViewGroup,
+     * android.os.Bundle)
+     */
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.daylist_fragment, container, false);
+        return inflater.inflate(R.layout.dayentry_fragment, container, false);
     }
 }
