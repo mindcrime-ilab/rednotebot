@@ -22,4 +22,5 @@ package de.mindcrimeilab.rednotebot;
  */
 public interface LogTags {
     public final static String APPLICATION = "RedNotebot";
+    public final static String CONTENT_PROVIDER = "RedNotebotContentProvider";
 }
