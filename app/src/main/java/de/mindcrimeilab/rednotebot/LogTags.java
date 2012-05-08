@@ -13,32 +13,13 @@
  */
 package de.mindcrimeilab.rednotebot;
 
-import de.akquinet.android.androlog.Log;
-import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 
 /**
- * This is the main activity of the Rednotebot application.
+ * Some constants for logging tags
  * 
  * @author Michael Engelhardt <me@mindcrime-ilab.de>
- * 
+ *
  */
-public class RedNotebotActivity extends FragmentActivity {
-
-    /*
-     * (non-Javadoc)
-     * 
-     * @see android.support.v4.app.FragmentActivity#onCreate(android.os.Bundle)
-     */
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        
-        // initialize logging
-        Log.init(getApplicationContext());
-        Log.v(LogTags.APPLICATION, "Application starting...");
-        
-        // setup ui
-        setContentView(R.layout.main);
-    }
+public interface LogTags {
+    public final static String APPLICATION = "RedNotebot";
 }
