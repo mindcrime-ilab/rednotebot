@@ -9,9 +9,9 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>rednotebot-it</artifactId>
+	<artifactId>rednotebot-integration-tests</artifactId>
 	<packaging>apk</packaging>
-	<name>rednotebot-it - Integration tests</name>
+	<name>RedNotebot Integration Tests</name>
 
 	<properties>
 		<!-- When not running a release, we are deploying the plain artifact (so 

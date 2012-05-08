@@ -11,7 +11,7 @@
 
 	<artifactId>rednotebot</artifactId>
 	<packaging>apk</packaging>
-	<name>rednotebot - Application</name>
+	<name>Rednotebot Application</name>
 
 	<dependencies>
 		<dependency>
@@ -28,9 +28,9 @@
 			<version>r7</version>
 		</dependency>
 
-		<!--  ============================================== -->
-		<!--  Dropbox releated dependencies -->
-		<!--  ============================================== -->
+		<!-- ============================================== -->
+		<!-- Dropbox releated dependencies -->
+		<!-- ============================================== -->
 		<dependency>
 			<groupId>com.dropbox</groupId>
 			<artifactId>dropbox-android</artifactId>
@@ -164,4 +164,5 @@
 			</build>
 		</profile>
 	</profiles>
+
 </project>
