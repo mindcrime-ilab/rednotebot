@@ -11,7 +11,7 @@
  * You should have received a copy of the GNU General Public License along with this program; if not, write to the Free
  * Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
-package de.mindcrimeilab.rednotebot.providers.dropbox;
+package de.mindcrimeilab.rednotebot.providers;
 
 import java.util.Map;
 import java.util.WeakHashMap;
@@ -31,6 +31,7 @@ import de.akquinet.android.androlog.Log;
 import de.mindcrimeilab.rednotebot.LogTags;
 import de.mindcrimeilab.rednotebot.PreferenceKeys;
 import de.mindcrimeilab.rednotebot.data.MonthEntry;
+import de.mindcrimeilab.rednotebot.providers.dropbox.ContentAccessMethods;
 
 /**
  * Content provider to access various sources of journal entries.
