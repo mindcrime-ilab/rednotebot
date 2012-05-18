@@ -31,7 +31,6 @@ import de.akquinet.android.androlog.Log;
 import de.mindcrimeilab.rednotebot.LogTags;
 import de.mindcrimeilab.rednotebot.PreferenceKeys;
 import de.mindcrimeilab.rednotebot.data.MonthEntry;
-import de.mindcrimeilab.rednotebot.providers.dropbox.ContentAccessMethods;
 
 /**
  * Content provider to access various sources of journal entries.
