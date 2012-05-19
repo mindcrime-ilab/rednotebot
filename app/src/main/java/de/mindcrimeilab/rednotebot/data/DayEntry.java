@@ -14,12 +14,12 @@
 package de.mindcrimeilab.rednotebot.data;
 
 /**
- * Class represents a entry for a month containing a list of {@code DayEntry} objects each for every annotated day in
- * the month.
+ * Class represents an entry for a certain day containing the content of the entry as well as the associated tags. It
+ * will also provide some utility methods to ease access to data parts.
  * 
  * @author Michael Engelhardt <me@mindcrime-ilab.de>
  * 
  */
-public class MonthEntry {
+public class DayEntry {
 
 }

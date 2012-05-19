@@ -52,6 +52,14 @@
 			<systemPath>${project.basedir}/lib/json_simple-1.1.jar</systemPath>
 		</dependency>
 
+		<!-- ============================================== -->
+		<!-- tailored YAML parser -->
+		<!-- ============================================== -->
+		<dependency>
+			<groupId>org.yaml</groupId>
+			<artifactId>android-snakeyaml</artifactId>
+			<version>1.11-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>
