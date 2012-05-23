@@ -13,6 +13,9 @@
  */
 package de.mindcrimeilab.rednotebot.data;
 
+import java.util.SortedSet;
+import java.util.TreeSet;
+
 /**
  * Class represents a entry for a month containing a list of {@code DayEntry} objects each for every annotated day in
  * the month.
@@ -21,5 +24,25 @@ package de.mindcrimeilab.rednotebot.data;
  * 
  */
 public class MonthEntry {
+    /** using a sorted set in order to have the day entries always in the correct order */
+    private final SortedSet<DayEntry> dayEntries;
+    
+    /**
+     * ctor()
+     * construct a new month entry
+     */
+    public MonthEntry() {
+        super();
+        this.dayEntries = new TreeSet<DayEntry>();
+    }
 
+    /**
+     * Adds a new day entry to the month.
+     * @param dayEntry
+     * @return true if the the month entry was modified otherwise false
+     * @see Set.add()
+     */
+    public boolean add(final DayEntry dayEntry) {
+        return this.dayEntries.add(dayEntry);
+    }
 }

@@ -13,6 +13,9 @@
  */
 package de.mindcrimeilab.rednotebot.data;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * Class represents an entry for a certain day containing the content of the entry as well as the associated tags. It
  * will also provide some utility methods to ease access to data parts.
@@ -21,5 +24,38 @@ package de.mindcrimeilab.rednotebot.data;
  * 
  */
 public class DayEntry {
-
+    /** day of month*/
+    private int day;
+    /** associated tags */
+    private Set<String> tags;
+    /** text content of entry */
+    private String content;
+    
+    /**
+     * ctor()
+     * Constructs a new day entry for a given day in month.
+     * @param day day in month the entry is created for.
+     */
+    
+    public DayEntry(int day) {
+        this.day = day;
+        this.tags = new HashSet<String>();
+        this.content = null;
+    }
+    
+    /**
+     * Sets the content of the entry.
+     * @param content
+     */
+    public void setContent(String content) {
+        this.content = content;
+    }
+    
+    /**
+     * Returns content of enty
+     * @return
+     */
+    public String getContent() {
+        return content;
+    }
 }
