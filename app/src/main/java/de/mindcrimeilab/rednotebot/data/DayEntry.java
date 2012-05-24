@@ -23,7 +23,7 @@ import java.util.Set;
  * @author Michael Engelhardt <me@mindcrime-ilab.de>
  * 
  */
-public class DayEntry {
+public class DayEntry implements Comparable<DayEntry>{
     /** day of month*/
     private int day;
     /** associated tags */
@@ -58,4 +58,20 @@ public class DayEntry {
     public String getContent() {
         return content;
     }
+
+    /* (non-Javadoc)
+     * @see java.lang.Comparable#compareTo(java.lang.Object)
+     */
+    public int compareTo(DayEntry another) {
+        final int ret;
+        if(null == another) {
+            ret = 1;
+        }
+        else {
+            ret = this.day - another.day;
+        }
+        return ret;
+    }
+    
+    
 }
