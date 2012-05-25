@@ -8,6 +8,14 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
+	<name>RedNotebot Parent</name>
+	
+	<issueManagement>
+		<url>https://github.com/mindcrime-ilab/rednotebot/issues</url>
+		<system>github issues</system>
+	</issueManagement>
+	<url>https://github.com/mindcrime-ilab/rednotebot/wiki</url>
+
 	<scm>
 		<url>https://github.com/mindcrime-ilab/rednotebot</url>
 		<connection>scm:git:git://github.com/mindcrime-ilab/rednotebot.git</connection>
@@ -58,7 +66,7 @@
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
-				<version>4.10</version>
+				<version>3.8.2</version>
 				<scope>provided</scope>
 			</dependency>
 		</dependencies>
@@ -246,10 +254,4 @@
 			</properties>
 		</profile>
 	</profiles>
-	<name>RedNotebot Parent</name>
-	<issueManagement>
-		<url>https://github.com/mindcrime-ilab/rednotebot/issues</url>
-		<system>github issues</system>
-	</issueManagement>
-	<url>https://github.com/mindcrime-ilab/rednotebot/wiki</url>
 </project>
