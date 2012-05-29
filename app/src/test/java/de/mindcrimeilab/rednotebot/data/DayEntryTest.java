@@ -13,13 +13,6 @@
  */
 package de.mindcrimeilab.rednotebot.data;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.SortedSet;
-import java.util.TreeSet;
-
 import junit.framework.TestCase;
 
 /**
