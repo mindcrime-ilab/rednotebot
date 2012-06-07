@@ -46,10 +46,12 @@ public enum HtmlReplacements implements Txt2TagsReplacements<String> {
     public String get(Txt2TagsEvents event) {
         return this.map.get(event);
     }
-    
+
     /**
-     * ctor
+     * ctor()
+     * 
      * initializes a map containing HTML replacements for a set of {@code Txt2TagsEvents}.
+     * 
      */
     private HtmlReplacements() {
         map = new HashMap<Txt2TagsEvents, String>();
@@ -78,7 +80,7 @@ public enum HtmlReplacements implements Txt2TagsReplacements<String> {
         map.put(Txt2TagsEvents.DOCUMENT_END, "</html>");
         map.put(Txt2TagsEvents.IMAGE, "<img src=\"$1.$2\" alt=\"$1.$2\" />");
     }
-    
+
     private final Map<Txt2TagsEvents, String> map;
 
 }
