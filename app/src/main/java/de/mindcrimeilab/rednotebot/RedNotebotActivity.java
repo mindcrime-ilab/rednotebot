@@ -13,9 +13,10 @@
  */
 package de.mindcrimeilab.rednotebot;
 
-import de.akquinet.android.androlog.Log;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.view.MenuItem;
+import de.akquinet.android.androlog.Log;
 
 /**
  * This is the main activity of the Rednotebot application.
@@ -33,12 +34,28 @@ public class RedNotebotActivity extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
+
         // initialize logging
         Log.init(getApplicationContext());
         Log.v(LogTags.APPLICATION, "Application starting...");
-        
+
         // setup ui
         setContentView(R.layout.main);
+    }
+
+    /*
+     * (non-Javadoc)
+     * 
+     * @see android.app.Activity#onOptionsItemSelected(android.view.MenuItem)
+     */
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.about: {
+                return false;
+            }
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }
