@@ -26,8 +26,33 @@
                 android:layout_gravity="center_vertical"
                 android:text="RedNotebot"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
-
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Mobile dairy, journal, notekeeping tool."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Copyright (C) 2012 Michael Engelhardt" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public
+  License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later
+  version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied
+  warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details."
+            android:textAppearance="?android:attr/textAppearanceSmall" />
 
         <TextView
             android:id="@+id/textView3"
@@ -36,7 +61,6 @@
             android:layout_margin="5dp"
             android:text="The Android robot is reproduced or modified from work created and shared by Google and used according to terms described in the Creative Commons 3.0 Attribution License."
             android:textAppearance="?android:attr/textAppearanceSmall" />
-
     </LinearLayout>
 
 </FrameLayout>
